@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jjkj.core.demo.mapper.DemoMapper">
+
+    <!-- 获取每日佳句信息列表 -->
+    <select id="getQuoteList" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        SELECT id, cn, en, pic FROM t_quote WHERE id = #{id}
+    </select>
+
+</mapper>
